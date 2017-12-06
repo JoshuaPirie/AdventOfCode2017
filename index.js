@@ -1,1 +1,1 @@
-console.log("Please run npm run dayXX");
+console.log("Please run the following command: npm run <day>-<part>");

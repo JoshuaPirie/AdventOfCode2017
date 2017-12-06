@@ -4,7 +4,8 @@
   "description": "Advent of Code 2017 Solutions",
   "main": "index.js",
   "scripts": {
-    "day01": "node ./solutions/day01/main.js"
+    "1-1": "node ./solutions/day1/part1.js",
+    "1-2": "node ./solutions/day1/part2.js"
   },
   "repository": {
     "type": "git",
