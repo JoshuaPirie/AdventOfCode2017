@@ -11,7 +11,11 @@
     "3-1": "node ./solutions/day3/part1.js",
     "3-2": "node ./solutions/day3/part2.js",
     "4-1": "node ./solutions/day4/part1.js",
-    "4-2": "node ./solutions/day4/part2.js"
+    "4-2": "node ./solutions/day4/part2.js",
+    "5-1": "node ./solutions/day5/part1.js",
+    "5-2": "node ./solutions/day5/part2.js",
+    "6-1": "node ./solutions/day6/part1.js",
+    "6-2": "node ./solutions/day6/part2.js"
   },
   "repository": {
     "type": "git",
