@@ -7,7 +7,9 @@
     "1-1": "node ./solutions/day1/part1.js",
     "1-2": "node ./solutions/day1/part2.js",
     "2-1": "node ./solutions/day2/part1.js",
-    "2-2": "node ./solutions/day2/part2.js"
+    "2-2": "node ./solutions/day2/part2.js",
+    "3-1": "node ./solutions/day3/part1.js",
+    "3-2": "node ./solutions/day3/part2.js"
   },
   "repository": {
     "type": "git",
