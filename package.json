@@ -1,0 +1,19 @@
+{
+  "name": "advent-of-code-2017",
+  "version": "1.0.0",
+  "description": "Advent of Code 2017 Solutions",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm index.js 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaPirie/AdventOfCode2017.git"
+  },
+  "author": "JoshuaPirie",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JoshuaPirie/AdventOfCode2017/issues"
+  },
+  "homepage": "https://github.com/JoshuaPirie/AdventOfCode2017#readme"
+}
