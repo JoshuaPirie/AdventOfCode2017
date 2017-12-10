@@ -21,7 +21,9 @@
     "8-1": "node ./solutions/day8/part1.js",
     "8-2": "node ./solutions/day8/part2.js",
     "9-1": "node ./solutions/day9/part1.js",
-    "9-2": "node ./solutions/day9/part2.js"
+    "9-2": "node ./solutions/day9/part2.js",
+    "10-1": "node ./solutions/day10/part1.js",
+    "10-2": "node ./solutions/day10/part2.js"
   },
   "repository": {
     "type": "git",
