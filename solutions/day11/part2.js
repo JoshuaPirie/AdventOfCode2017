@@ -1,34 +1,17 @@
 require("fs").readFile(require("path").resolve(__dirname, "input"), "utf8", (err, data) => {
     let coords = { x: 0, y: 0, z: 0 };
     let origin = { x: 0, y: 0, z: 0 };
+    let dirs = { 
+        n:  c => { c.x++; c.z--; },
+        s:  c => { c.z++; c.x--; },
+        ne: c => { c.x++; c.y--; },
+        nw: c => { c.y++; c.z--; },
+        se: c => { c.z++; c.y--; },
+        sw: c => { c.y++; c.x--; }
+    };
     let furthest = 0;
     data.split(",").forEach(x => {
-        switch(x) {
-            case "n":
-                coords.x++;
-                coords.z--;
-                break;
-            case "s":
-                coords.z++;
-                coords.x--;
-                break;
-            case "ne":
-                coords.x++;
-                coords.y--;
-                break;
-            case "nw":
-                coords.y++;
-                coords.z--;
-                break;
-            case "se":
-                coords.z++;
-                coords.y--;
-                break;
-            case "sw":
-                coords.y++;
-                coords.x--;
-                break;
-        }
+        dirs[x](coords);
         let dist = distance(coords, origin);
         if(dist > furthest)
             furthest = dist;
