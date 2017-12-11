@@ -23,7 +23,9 @@
     "9-1": "node ./solutions/day9/part1.js",
     "9-2": "node ./solutions/day9/part2.js",
     "10-1": "node ./solutions/day10/part1.js",
-    "10-2": "node ./solutions/day10/part2.js"
+    "10-2": "node ./solutions/day10/part2.js",
+    "11-1": "node ./solutions/day11/part1.js",
+    "11-2": "node ./solutions/day11/part2.js"
   },
   "repository": {
     "type": "git",
