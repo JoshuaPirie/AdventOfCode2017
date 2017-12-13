@@ -1,7 +1,5 @@
-require("fs").readFile(require("path").resolve(__dirname, "input"), "utf8", (err, data) => {
-    let sum = 0;
-    for(let i = 0; i < data.length; i++)
-        if(data[i] == data[(i + data.length / 2) % data.length])
-            sum += parseInt(data[i]);
-    console.log(sum);
-});
+console.log(require("fs").readFileSync(require("path").resolve(__dirname, "input"), "utf8").split("").reduce((acc, curr, i, a) => {
+    if(curr == a[(i + a.length / 2) % a.length])
+        acc += parseInt(curr);
+    return acc;
+}, 0));
