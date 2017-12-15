@@ -31,7 +31,9 @@
     "13-1": "node ./solutions/day13/part1.js",
     "13-2": "node ./solutions/day13/part2.js",
     "14-1": "node ./solutions/day14/part1.js",
-    "14-2": "node ./solutions/day14/part2.js"
+    "14-2": "node ./solutions/day14/part2.js",
+    "15-1": "node ./solutions/day15/part1.js",
+    "15-2": "node ./solutions/day15/part2.js"
   },
   "repository": {
     "type": "git",
