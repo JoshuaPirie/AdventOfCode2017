@@ -1,6 +1,6 @@
 let input = require("fs").readFileSync(require("path").resolve(__dirname, "input"), "utf8").split(/\r?\n/).map(x => x.split(" ").map(x => isNaN(x) ? x : parseInt(x)));
-let program1 = { curr: 0, msgs: [], wait: false, sent: 0 };
-let program2 = { curr: 0, msgs: [], wait: false, sent: 0 };
+let program1 = { curr: 0, msgs: [], wait: false, sent: 0, p: 0 };
+let program2 = { curr: 0, msgs: [], wait: false, sent: 0, p: 1 };
 program1.dest = program2;
 program2.dest = program1;
 let resolve = (r, x) => isNaN(x) ? (r[x] || 0) : x;
@@ -38,4 +38,4 @@ while(!(program1.wait && program2.wait)) {
     step(program1);
     step(program2);
 }
-console.log(program1.sent / 2);
+console.log(program2.sent);
