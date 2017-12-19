@@ -39,7 +39,9 @@
     "17-1": "node ./solutions/day17/part1.js",
     "17-2": "node ./solutions/day17/part2.js",
     "18-1": "node ./solutions/day18/part1.js",
-    "18-2": "node ./solutions/day18/part2.js"
+    "18-2": "node ./solutions/day18/part2.js",
+    "19-1": "node ./solutions/day19/part1.js",
+    "19-2": "node ./solutions/day19/part2.js"
   },
   "repository": {
     "type": "git",
