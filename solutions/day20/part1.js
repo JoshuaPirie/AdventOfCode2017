@@ -1,7 +1,7 @@
 let particles = require("fs").readFileSync(require("path").resolve(__dirname, "input"), "utf8").split(/\r?\n/).map(x => {
     let obj = {};
     x.split(", ").map(y => y.split("=")).forEach(y => {
-        let nums = y[1].replace(/<|>/g, "").split(",").map(Number);
+        let nums = y[1].replace(/<| |>/g, "").split(",").map(Number);
         obj[y[0]] = { x: nums[0], y: nums[1], z: nums[2] };
     });
     return obj;
@@ -18,7 +18,7 @@ function tick() {
     });
 }
 
-for(let i = 0; i < 10000; i++)
+for(let i = 0; i < 1000; i++)
     tick();
 
 let closestI = -1;
