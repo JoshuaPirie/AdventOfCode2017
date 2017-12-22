@@ -6,6 +6,7 @@ for(let y = 0; y < nodeMap.length; y++)
             infected.add(`${x},${y}`);
 let infections = 0;
 let pos = { x: Math.floor(nodeMap[0].length / 2), y: Math.floor(nodeMap.length / 2) };
+let dirs = [{ x: 0, y: -1 }, { x: 1, y: 0 }, { x: 0, y: 1 }, { x: -1, y: 0 }];
 let dir = 0;
 for(let i = 0; i < 10000; i++)
     burst();
@@ -21,18 +22,6 @@ function burst() {
         infections++;
         dir = (dir + 3) % 4;
     }
-    switch(dir) {
-        case 0:
-            pos.y--;
-            break;
-        case 1:
-            pos.x++;
-            break;
-        case 2:
-            pos.y++;
-            break;
-        case 3:
-            pos.x--;
-            break;
-    }
+    pos.x += dirs[dir].x;
+    pos.y += dirs[dir].y;
 }
