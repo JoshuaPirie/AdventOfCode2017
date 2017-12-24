@@ -49,7 +49,9 @@
     "22-1": "node ./solutions/day22/part1.js",
     "22-2": "node ./solutions/day22/part2.js",
     "23-1": "node ./solutions/day23/part1.js",
-    "23-2": "node ./solutions/day23/part2.js"
+    "23-2": "node ./solutions/day23/part2.js",
+    "24-1": "node ./solutions/day24/part1.js",
+    "24-2": "node ./solutions/day24/part2.js"
   },
   "repository": {
     "type": "git",
